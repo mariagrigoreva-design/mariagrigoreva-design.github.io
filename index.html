@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Мария Григорьева — UX/UI дизайнер</title>
+    <meta name="description" content="Портфолио UX/UI дизайнера Марии Григорьевой: UX-аудит VK Работы, исследование Alpinabook.ru, UI-проекты. 10 лет опыта в веб-аналитике.">
+
+    <!-- Шрифты: Oswald — крупные заголовки, Playfair Display — курсивные акценты, Onest — основной текст -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Onest:wght@400;500;600&family=Oswald:wght@500;600&family=Playfair+Display:ital,wght@1,400;1,500;1,700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <!-- Иконки-звёздочки. Один раз описаны здесь, дальше вставляются через <use href="#sparkle"> -->
+    <svg class="sprite" aria-hidden="true">
+        <symbol id="sparkle" viewBox="0 0 24 24">
+            <path d="M12 0C12.6 6.4 17.6 11.4 24 12C17.6 12.6 12.6 17.6 12 24C11.4 17.6 6.4 12.6 0 12C6.4 11.4 11.4 6.4 12 0Z" />
+        </symbol>
+        <symbol id="asterisk" viewBox="0 0 24 24">
+            <path d="M12 1v22M1 12h22M4.2 4.2l15.6 15.6M19.8 4.2L4.2 19.8" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" />
+        </symbol>
+        <symbol id="arrow" viewBox="0 0 24 24">
+            <path d="M6 18L18 6M9 6h9v9" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+        </symbol>
+    </svg>
+
+    <!-- ========== ШАПКА ========== -->
+    <header class="header">
+        <div class="container header__inner">
+            <a class="logo" href="#top"><span class="logo__dot"></span>Мария Григорьева</a>
+            <nav class="nav" aria-label="Разделы сайта">
+                <a href="#cases">Кейсы</a>
+                <a href="#about">Обо мне</a>
+                <a href="#experience">Опыт</a>
+                <a href="#contacts">Контакты</a>
+            </nav>
+            <a class="pill pill--lemon" href="https://t.me/marugrig" target="_blank" rel="noopener">tg: @marugrig</a>
+        </div>
+    </header>
+
+    <main id="top">
+
+        <!-- ========== ПЕРВЫЙ ЭКРАН ========== -->
+        <section class="hero">
+            <div class="container hero__grid">
+
+                <div class="hero__text">
+                    <p class="hero__hello">Привет, я Мария,</p>
+                    <h1 class="hero__title">
+                        <span class="hero__caps">UX/UI</span>
+                        <span class="hero__caps">дизайнер</span>
+                        <span class="hero__serif">&amp; UX-аналитик</span>
+                    </h1>
+                    <p class="hero__lead">10 лет я настраивала сквозную аналитику и видела в цифрах, где сайты теряют клиентов. Теперь выясняю, почему так происходит, и проектирую интерфейсы, которые это исправляют.</p>
+                    <div class="hero__buttons">
+                        <a class="button button--dark" href="#cases">
+                            Смотреть кейсы
+                            <span class="button__icon"><svg><use href="#arrow" /></svg></span>
+                        </a>
+                        <a class="button button--outline" href="https://t.me/marugrig" target="_blank" rel="noopener">Написать в Telegram</a>
+                    </div>
+                </div>
+
+                <div class="hero__visual">
+                    <div class="hero__card"></div>
+                    <div class="hero__arch"></div>
+                    <!-- Фото-стикер: чёрно-белое, вырезано по контуру, края бумаги рваные -->
+                    <img class="hero__photo" src="img/me-sticker-torn.png" alt="Мария Григорьева" width="811" height="932">
+                    <svg class="hero__star hero__star--big"><use href="#sparkle" /></svg>
+                    <svg class="hero__star hero__star--small"><use href="#sparkle" /></svg>
+                    <svg class="hero__asterisk"><use href="#asterisk" /></svg>
+                </div>
+
+                <ul class="stats">
+                    <li class="stats__item">
+                        <span class="stats__number">10+</span>
+                        <span class="stats__label">лет работаю с сайтами и данными</span>
+                    </li>
+                    <li class="stats__item">
+                        <span class="stats__number">100+</span>
+                        <span class="stats__label">сайтов, где я настроила сквозную аналитику</span>
+                    </li>
+                    <li class="stats__item">
+                        <span class="stats__number">12</span>
+                        <span class="stats__label">UX-проблем нашла на Alpinabook.ru</span>
+                    </li>
+                    <li class="stats__item">
+                        <span class="stats__number">7</span>
+                        <span class="stats__label">человек было в моём отделе в Calltracking</span>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- Чем занимаюсь: 4 колонки с разделителями -->
+            <div class="container">
+                <ul class="services">
+                    <li class="services__item">
+                        <h2 class="services__title">UX-исследования</h2>
+                        <p>Интервью, персонажи, CJM и юзабилити-тесты: выясняю, где и почему людям неудобно.</p>
+                    </li>
+                    <li class="services__item">
+                        <h2 class="services__title">UX-аудит</h2>
+                        <p>Разбираю сайт по эвристикам и данным аналитики, собираю проблемы по приоритету.</p>
+                    </li>
+                    <li class="services__item">
+                        <h2 class="services__title">Дизайн интерфейсов</h2>
+                        <p>Вайрфреймы, прототипы и UI в Figma на Auto Layout и компонентах.</p>
+                    </li>
+                    <li class="services__item">
+                        <h2 class="services__title">Веб-аналитика</h2>
+                        <p>Яндекс.Метрика и Google Analytics: проверяю гипотезы цифрами, а не на глаз.</p>
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- ========== КЕЙСЫ ========== -->
+        <section class="section" id="cases">
+            <div class="container">
+                <div class="section__head">
+                    <h2 class="section__title">Кейсы</h2>
+                    <p class="section__note">Учебные проекты курсов Skillbox и GeekBrains. Полные версии с процессом и экранами — на <a href="https://www.behance.net/24bf8cea" target="_blank" rel="noopener">Behance</a>.</p>
+                </div>
+
+                <!-- Кейс 1: Alpinabook — большая картинка и подпись строкой, как в примере Dominic -->
+                <!-- <article class="case-big">
+                    <a class="case-big__image" href="https://www.behance.net/gallery/256766575/UX-audit-i-juzabiliti-testirovanie-Alpinabookru" target="_blank" rel="noopener">
+                        <img src="img/Обложка_alpinabook.png" alt="Обложка кейса: UX-исследование интернет-магазина Alpinabook.ru" width="1200" height="646" loading="lazy">
+                    </a>
+                    <div class="case-big__row">
+                        <h3 class="case-big__title">Alpinabook.ru</h3>
+                        <p class="case-big__text">UX-исследование интернет-магазина издательства: конкуренты, персонажи, CJM, юзабилити-тест. Нашла 12 проблем, 6 из них критичные. Главный инсайт: если книги нет в наличии, покупатель уходит на маркетплейс. Предложила предзаказ и уведомление о поступлении прямо в каталоге.</p>
+                        <a class="pill pill--light" href="https://www.behance.net/gallery/256766575/UX-audit-i-juzabiliti-testirovanie-Alpinabookru" target="_blank" rel="noopener">Кейс alpinabook.ru на Behance</a>
+                    </div>
+                </article>-->
+                <!-- UI-проекты: оранжевый блок с карточками, как Selected works в примере Solar Pop -->
+                <div class="works">
+                    <div class="works__grid">
+                        <a class="work" href="https://www.behance.net/gallery/256766575/UX-audit-i-juzabiliti-testirovanie-Alpinabookru" target="_blank" rel="noopener">
+                            <span class="work__kind">UX-кейс</span>
+                            <span class="work__name">Alpinabook.ru</span>
+                            <span class="work__desc">Проводила бизнес-анализ, строила CJM, проводила интервью и юзабилити-тестирование интернет-магазина издательства.</span>
+                            <span class="work__image"><img src="img/ux-audit.jpg" alt="Главная страница зоомагазина ZooMeal" loading="lazy"></span>
+                            <span class="work__arrow"><svg><use href="#arrow" /></svg></span>
+                        </a>    
+                        <a class="work" href="https://www.behance.net/gallery/178996689/Glamping-langing-page-Study-project" target="_blank" rel="noopener">
+                            <span class="work__kind">Лендинг</span>
+                            <span class="work__name">Глэмпинг My&nbsp;Tree</span>
+                            <span class="work__desc">Создание простого сайта для бронирования домиков с разделами: типы размещения, удобствва, галерея, контакты.</span>
+                            <span class="work__image"><img src="img/glamping.jpg" alt="Первый экран лендинга глэмпинга My Tree" loading="lazy"></span>
+                            <span class="work__arrow"><svg><use href="#arrow" /></svg></span>
+                        </a>
+                        <a class="work" href="https://www.behance.net/gallery/256083501/stranica-tovara-otzyvy" target="_blank" rel="noopener">
+                            <span class="work__kind">UX/UI страницы товара</span>
+                            <span class="work__name">Страница с отзывами</span>
+                            <span class="work__desc">Страница товара с удобным поиском в разделе Отзывы: фильтр по ключевым словам, чтобы быстро найти ответ на свой вопрос.</span>
+                            <span class="work__image"><img src="img/reviews.jpg" alt="Макет страницы товара с отзывами на экране ноутбука" loading="lazy"></span>
+                            <span class="work__arrow"><svg><use href="#arrow" /></svg></span>
+                        </a>
+                         <a class="work" href="https://www.behance.net/gallery/178216955/Pet-shop-with-UXUI-design-for-ZooMeal" target="_blank" rel="noopener">
+                            <span class="work__kind">UX/UI, интернет-магазин</span>
+                            <span class="work__name">ZooMeal</span>
+                            <span class="work__desc">Сайт, который помогает выбрать и заказать корм для питомца с доставкой.</span>
+                            <span class="work__image"><img src="img/zoomeal.jpg" alt="Макет страницы товара с отзывами на экране ноутбука" loading="lazy"></span>
+                            <span class="work__arrow"><svg><use href="#arrow" /></svg></span>
+                        </a>
+                        <!--<h3 class="works__title">UI-проекты</h3>-->
+                        <a class="pill pill--light" href="https://www.behance.net/24bf8cea" target="_blank" rel="noopener">Все работы на Behance</a>
+                    </div>
+                </div>
+                <!-- Кейс 2: VK Работа — лимонный блок с отзывом -->
+                <article class="case-review" id="vk-review">
+                    <div class="case-review__info">
+                        <h3 class="case-review__title">vkrabota.ru</h3>
+                        <p class="case-review__text">UX-аудит сайта сервиса поиска работы. Нашла проблему в работе фильтра «Категория» в веб-версии. Часть моих предложений команда добавила в очередь на A/B-тесты.</p>
+                        <div class="tags">
+                            <span class="tag">UX-аудит</span>
+                            <span class="tag">GeekBrains</span>
+                        </div>
+                        <a class="button button--dark" href="https://docs.google.com/spreadsheets/d/1bCG69MNvxgh2kqF6uPIkTLsT9GXueVIQr8H8zeMVtPM/edit?usp=sharing" target="_blank" rel="noopener">Смотреть чек-лист <span class="button__icon"><svg><use href="#arrow" /></svg></span></a>
+                    </div>
+                    <figure class="quote">
+                        <span class="quote__mark" aria-hidden="true">“</span>
+                        <blockquote class="quote__text">
+                            <p>Работа отличная) Очень важное замечание про работу фильтра «Категория». Посмотрел эту проблему более детально: хорошо, что подобных проблем нет в приложениях, но в вебе все равно надо исправлять.</p>
+                            <p>Много пунктов из тех, что вы отправили, добавили в очередь на аб тесты, посмотрим, что возьмут из этого продуктовые менеджеры)</p>
+                        </blockquote>
+                        <figcaption class="quote__author">
+                            <b>Павел Земсков</b>
+                            руководитель группы продуктовой и маркетинговой аналитики VK Работа, преподаватель курса
+                        </figcaption>
+                    </figure>
+                    <svg class="case-review__star"><use href="#sparkle" /></svg>
+                </article>
+            </div>
+        </section>
+
+        <!-- ========== ОБО МНЕ ========== -->
+        <section class="section" id="about">
+            <div class="container">
+                <div class="about">
+                    <h2 class="about__title">Из аналитики в&nbsp;дизайн</h2>
+                    <div class="about__text">
+                        <p class="about__lead">Больше 10 лет я работала с сайтами со стороны аналитики и клиентского сервиса. Теперь применяю этот опыт в UX/UI-дизайне.</p>
+                        <p>В i-Media настроила сквозную аналитику для 100+ сайтов из разных ниш. Ставила задачи разработчикам, писала баг-репорты, руководила отделом из 7 человек. Поэтому в проектах <em>опираюсь на данные и поведение пользователей, а не только на визуал</em>.</p>
+                        <p>Ищу первую работу в дизайне, рассматриваю и стажировку.</p>
+                    </div>
+                </div>
+
+                <!-- Навыки-таблетки, разбросанные под разными углами -->
+                <div class="skills">
+                    <h3 class="skills__title">Чем я&nbsp;работаю</h3>
+                    <ul class="skills__cloud">
+                        <li class="chip chip--pink">Figma</li>
+                        <li class="chip">Auto Layout и компоненты</li>
+                        <li class="chip chip--lemon">Прототипирование</li>
+                        <li class="chip">CJM</li>
+                        <li class="chip chip--orange">Юзабилити-тестирование</li>
+                        <li class="chip">UX-аудит</li>
+                        <li class="chip chip--pink">Анализ конкурентов</li>
+                        <li class="chip">Miro</li>
+                        <li class="chip chip--lemon">Яндекс.Метрика</li>
+                        <li class="chip">Google Analytics</li>
+                        <li class="chip chip--orange">HTML и CSS</li>
+                        <li class="chip">Tilda</li>
+                        <li class="chip chip--pink">Photoshop</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- ========== КАК Я РАБОТАЮ ========== -->
+         <!--<section class="section">
+            <div class="container">
+                <div class="section__head">
+                    <h2 class="section__title">Как я работаю</h2>
+                    <p class="section__note">Так я вела исследование Alpinabook.ru: от бизнеса и данных к пользователям, макетам и проверке.</p>
+                </div>
+                <ol class="steps">
+                    <li class="step">
+                        <span class="step__num">1</span>
+                        <h3 class="step__title">Разбираюсь в продукте</h3>
+                        <p class="step__text">Цели бизнеса, рынок, конкуренты и данные Метрики</p>
+                    </li>
+                    <li class="step">
+                        <span class="step__num">2</span>
+                        <h3 class="step__title">Изучаю людей</h3>
+                        <p class="step__text">Интервью, персонажи и путь клиента в CJM</p>
+                    </li>
+                    <li class="step">
+                        <span class="step__num">3</span>
+                        <h3 class="step__title">Проектирую</h3>
+                        <p class="step__text">Вайрфреймы, прототипы и макеты в Figma</p>
+                    </li>
+                    <li class="step step--final">
+                        <span class="step__num">4</span>
+                        <h3 class="step__title">Проверяю</h3>
+                        <p class="step__text">Юзабилити-тест и отчёт с приоритетами правок</p>
+                    </li>
+                </ol>
+            </div>
+        </section>-->
+
+        <!-- ========== ОПЫТ И ОБРАЗОВАНИЕ ========== -->
+        <section class="section" id="experience">
+            <div class="container experience">
+                <div class="education">
+                    <h2 class="section__title section__title--small">Образование</h2>
+                    <div class="education__item">
+                        <h3>UX/UI дизайнер интерфейсов</h3>
+                        <p>Skillbox</p>
+                        <span class="date">2024</span>
+                    </div>
+                    <div class="education__item">
+                        <h3>UX-аналитика</h3>
+                        <p>GeekBrains</p>
+                        <span class="date">2021</span>
+                    </div>
+                </div>
+
+                <div class="timeline">
+                    <h2 class="section__title section__title--small">Опыт</h2>
+
+                    <div class="timeline__item">
+                        <svg class="timeline__mark"><use href="#sparkle" /></svg>
+                        <span class="date">2021 — 2024</span>
+                        <h3>UX/UI дизайнер</h3>
+                        <p class="timeline__company">Учебные проекты Skillbox и GeekBrains</p>
+                        <p>UX-аудит VK Работы, исследование Alpinabook.ru, UI-проекты.</p>
+                    </div>
+
+                    <div class="timeline__item">
+                        <svg class="timeline__mark"><use href="#sparkle" /></svg>
+                        <span class="date">Июнь 2015 — Август 2024</span>
+                        <h3>Специалист по сквозной аналитике, руководитель отдела поддержки</h3>
+                        <p class="timeline__company timeline__company--first">i-Media: calltracking.ru и callscoring.ru</p>
+                        <p class="timeline__company">В компании с 2015 года, с перерывом в 2018–2019 годах на работу в проекте Lecca.</p>
+                        <ul>
+                            <li>Настроила сквозную аналитику для 100+ сайтов из разных ниш</li>
+                            <li>Изучала сайты клиентов для настройки сервиса через Chrome DevTools, анализировала структуру, блоки и адаптивность вёрстки.</li>
+                            <li>Ставила задачи разработчикам, писала баг-репорты и контролировала исправления</li>
+                            <li>Руководила отделом из 7 человек, обучала сотрудников веб-аналитике</li>
+                        </ul>
+                    </div>
+
+                    <div class="timeline__item">
+                        <svg class="timeline__mark"><use href="#sparkle" /></svg>
+                        <span class="date">Август 2018 — февраль 2019</span>
+                        <h3>Управляющий продуктом</h3>
+                        <p class="timeline__company">Стартап Lecca, ООО «Двигус»</p>
+                        <p>Стартап Lecca — сервис контроля звонков отдела продаж. Участвовала в разработке личного кабинета для прослушивания звонков: например, функции отметки фрагмента записи с привязкой ко времени. Руководила группой из 5–6 человек.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ========== КОНТАКТЫ ========== -->
+        <section class="section contact" id="contacts">
+            <div class="container contact__grid">
+                <div class="contact__left">
+                    <h2 class="contact__title">
+                        <span class="contact__caps">Давайте</span>
+                        <span class="contact__serif">поработаем вместе</span>
+                    </h2>
+                    <ul class="contact__list">
+                        <li><a href="https://t.me/marugrig" target="_blank" rel="noopener">Telegram: @marugrig</a></li>
+                        <li><a href="mailto:maria.grigoreva91@gmail.com">maria.grigoreva91@gmail.com</a></li>
+                        <li><a href="tel:+79639769416">+7 963 976-94-16</a></li>
+                        <li><a href="https://volgograd.hh.ru/resume/a7762c65ff0a4c4d090039ed1f55704a303636" target="_blank" rel="noopener">Резюме на hh.ru</a></li>
+                        <li><a href="https://www.behance.net/24bf8cea" target="_blank" rel="noopener">Behance</a></li>
+                    </ul>
+                </div>
+                <div class="contact__card">
+                    <svg class="contact__asterisk"><use href="#asterisk" /></svg>
+                    <p class="contact__card-title">Ищу первую работу в дизайне</p>
+                    <p>Рассматриваю полную занятость и стажировку. Живу в Волгограде, работаю по московскому времени.</p>
+                    <a class="button button--dark" href="https://t.me/marugrig" target="_blank" rel="noopener">
+                        Написать в Telegram
+                        <span class="button__icon"><svg><use href="#arrow" /></svg></span>
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container footer__inner">
+            <p>© 2026 Мария Григорьева</p>
+        </div>
+    </footer>
+</body>
+
+</html>
